@@ -104,7 +104,7 @@
 //   }
 //  }
 
-//////////////////// forEach ///////////////////////
+//////////////////// forEach ///////////////////////  (higher order function ==> khaterha tekhedh function ka parameter)
 
 //   movements.forEach(function(ele,index){
 //  if (ele>0){
@@ -175,15 +175,28 @@
   // info("salma","tunisia")
 
 
-   const car = age => {
-     if(age>18){
-      return "you can drive"
-     }
-     else {
-      return "you cant drive"
-     }
-   }
+   
 
-   console.log(car(19))
+  //  const car = age  => {
+  //    if(age>18){
+  //     return "you can drive"
+  //    }
+  //    else {
+  //     return "you cant drive"
+  //    }
+  //  }
+
+  //  console.log(car(19))
 
 
+  // let array1 = [5, 3, 8];
+  // let array2 = [7, 2, 4];
+  
+  // // Concatenate the two arrays
+  // let combinedArray = array1.concat(array2);
+  
+  // // Sort the combined array in ascending order
+  // combinedArray.sort((a, b) => b - a);
+  
+  // console.log(combinedArray); // Output: [2, 3, 4, 5, 7, 8]
+  
