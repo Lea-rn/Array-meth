@@ -174,8 +174,38 @@
 // Filter Negative Numbers:
 // Use forEach  to remove all negative numbers from an array.
 
+////////////////////
+//  const arr = [-1,-2,-3,-4,-5,1,2,3]
+
+// function removeNegative (arr){
+//  let postiveNumber = [] 
+//  arr.forEach(function(ele){
+//      if (ele>=0){
+//       postiveNumber.push(ele)
+//      }
+//  })
+//  return postiveNumber
+// }
+
+// console.log(removeNegative(arr))
+
 // Flatten an Array of Arrays:
 // Use concat and forEach to flatten an array of arrays (e.g., [[1, 2], [3, 4]] into [1, 2, 3, 4]).
+////////////////////////////////
+// const arr = [[1,2,3],[10,20,30],[50,60,100]]
+// console.log(arr) /////====> [1,2,3,10,20,30,50,60,100]
+// function flaaten (arr){
+//    let flat = [] 
+//    arr.forEach(function(ele){
+//     flat = flat.concat(ele)
+//    })
+
+//    return flat
+
+// }
+
+// console.log(flaaten(arr))
+
 
 // Advanced Problems:://////////////////////////////////////////////////////////////////////////////
 
@@ -183,15 +213,86 @@
 // Remove Duplicates from an Array:
 // Use forEach and includes to remove duplicates from an array.
 
+//////////////////////////////////
+// const arr = [1,2,10,11,10,5,6,5,10,11]
+// console.log(arr)
+// function removeDublicate (arr){
+//  let withoutDouble = [] ; 
+//  arr.forEach(function(ele){
+//   if (!withoutDouble.includes(ele)){
+//    withoutDouble.push(ele)
+//   }
+//  })
+//  return withoutDouble ; 
+// }
+// console.log(removeDublicate(arr))
+
 // Interleave Two Arrays:
 // Given two arrays of equal length, return a new array where the elements of the two arrays are interleaved (i.e., [a1, b1, a2, b2, ...]).
+///////////////////////////////
+// const arr1 = [1,2,3]
+// const arr2 = [4,5,6]  ///// const arr3 = [1,4,2,5,3,6]
+// function interleave (arr1,arr2){
+// const result = [] ; 
+// arr1.forEach(function(ele,i){
+//   result.push(ele,arr2[i])  
+// })
+// return result
+// }
+
+// console.log(interleave(arr1,arr2))
+
 
 // Create a New Array Without Specific Elements:
 // Write a function that removes all occurrences of a specific value from an array using forEach and splice.
 
+////////////////////////////////////////
+
+// function removeEelement (arr,eleToRemove){
+//  arr.forEach(function(ele,i){
+//     if (ele === eleToRemove){
+//         arr.splice(i,1)
+//     }
+//  })
+//  return arr
+// }
+
+// const arr = [1,2,30,10,30,20]
+// console.log(arr)
+// console.log(removeEelement(arr,30))
+
 // Sort an Array in Descending Order:
 // Create a function that sorts an array in descending order using reverse and the sort method.
+//////////////////////////////////////
+
+// function sortDescending (arr){
+//  return arr.sort((a,b)=>b-a)
+// }
+
+// const arr = [10,20,200,5,1000]
+// console.log(sortDescending(arr)) // [ 1000, 200, 20, 10]
 
 // Bonus Problem for Deeper Practice
 // Group Numbers by Even and Odd:
 // Use forEach to separate the even and odd numbers from an array into two different arrays.
+
+/////////////////////////////////////////
+
+
+// function separate (arr){
+// let evenNumbers = [] ; 
+// let oddNumbers = [] ; 
+
+// arr.forEach(function(ele){
+//     if (ele %2 === 0 ){
+//         evenNumbers.push(ele)
+//     }else {
+//         oddNumbers.push(ele)
+//     }
+// })
+// return {evenNumbers,oddNumbers}
+
+// }
+
+// const arr = [1,2,3,5,3,810,11,20,5,9,12]
+// console.log(separate(arr))
